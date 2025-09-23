@@ -1,0 +1,31 @@
+{
+  "name": "pocket-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start-backend": "nodemon server.js",
+    "start-frontend": "http-server -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waldenism/Pocket-Companion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waldenism/Pocket-Companion/issues"
+  },
+  "homepage": "https://github.com/Waldenism/Pocket-Companion#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1758598378733",
+    "name": "ESP",
+    "cards": [
+      "assets/cards/Promo-A/P-A_007_EN.png",
+      "assets/cards/Promo-A/P-A_007_EN.png",
+      "assets/cards/A2b/A2b_111_EN.png",
+      "assets/cards/A2b/A2b_111_EN.png",
+      "assets/cards/Promo-A/P-A_006_EN.webp",
+      "assets/cards/Promo-A/P-A_001_EN.png",
+      "assets/cards/A3b/A3b_078_EN.png",
+      "assets/cards/A3b/A3b_078_EN.png",
+      "assets/cards/A3b/A3b_092_EN.png",
+      "assets/cards/A3b/A3b_092_EN.png",
+      "assets/cards/A3b/A3b_034_EN.png",
+      "assets/cards/A3b/A3b_034_EN.png",
+      "assets/cards/A3b/A3b_028_EN.png",
+      "assets/cards/A3b/A3b_076_EN_SM.webp",
+      "assets/cards/A4/A4_205_EN.png",
+      "assets/cards/A4/A4_190_EN.png",
+      "assets/cards/A4/A4_158_EN_SM.webp",
+      "assets/cards/A3b/A3b_066_EN.webp",
+      "assets/cards/A1/A1_225_EN.png",
+      "assets/cards/A1/A1_223_EN.png"
+    ]
+  },
+  {
+    "id": "1758651870366",
+    "name": "BLAST",
+    "cards": [
+      "assets/cards/Promo-A/P-A_007_EN.png",
+      "assets/cards/Promo-A/P-A_007_EN.png",
+      "assets/cards/A2b/A2b_111_EN.png",
+      "assets/cards/A2b/A2b_111_EN.png",
+      "assets/cards/A1/A1_225_EN.png",
+      "assets/cards/A2b/A2b_069_EN.webp",
+      "assets/cards/A2/A2_146_EN_SM.webp",
+      "assets/cards/A4/A4_151_EN.webp",
+      "assets/cards/A4/A4_151_EN.webp",
+      "assets/cards/A3/A3_144_EN_SM.webp",
+      "assets/cards/A4a/A4a_023_EN.webp",
+      "assets/cards/A2/A2_050_EN.webp",
+      "assets/cards/A2/A2_050_EN.webp",
+      "assets/cards/A4/A4_059_EN.webp",
+      "assets/cards/A3/A3_144_EN_SM.webp",
+      "assets/cards/A1/A1_232_EN.webp",
+      "assets/cards/A1/A1_232_EN.webp",
+      "assets/cards/A3/A3_216_EN.webp",
+      "assets/cards/A1/A1_056_EN.webp",
+      "assets/cards/A1/A1_056_EN.webp"
+    ]
+  }
+]
