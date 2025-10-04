@@ -17,145 +17,8 @@ async function apiFetch(endpoint, options = {}) {
 }
 
 
-/* ===========================
-   Full asset directory object
-   (based on the file list you provided)
-   Update paths here if needed.
-   =========================== */
-const cardAssets = {
-  "Promo-A": [
-    "assets/cards/Promo-A/P-A_007_EN.png",
-    "assets/cards/Promo-A/P-A_005_EN.png",
-    "assets/cards/Promo-A/P-A_006_EN.webp",
-    "assets/cards/Promo-A/P-A_001_EN.png",
-    "assets/cards/Promo-A/P-A_002_EN.webp"
-  ],
-  "A1": [
-    "assets/cards/A1/A1_098_EN_SM.webp",
-    "assets/cards/A1/A1_089_EN_SM.webp",
-    "assets/cards/A1/A1_097_EN_SM.webp",
-    "assets/cards/A1/A1_225_EN.png",
-    "assets/cards/A1/A1_223_EN.png",
-    "assets/cards/A1/A1_087_EN_SM.webp",
-    "assets/cards/A1/A1_205_EN.png",
-    "assets/cards/A1/A1_232_EN.webp",
-    "assets/cards/A1/A1_056_EN.webp",
-    "assets/cards/A1/A1_184_EN.png",
-    "assets/cards/A1/A1_185_EN.png",
-    "assets/cards/A1/A1_176_EN.webp",
-    "assets/cards/A1/A1_222_EN.webp",
-    "assets/cards/A1/A1_243_EN.webp",
-    "assets/cards/A1/A1_182_EN.webp",
-    "assets/cards/A1/A1_181_EN.webp"
-  ],
-  "A1a": [
-    "assets/cards/A1a/A1a_068_EN_SM.webp",
-    "assets/cards/A1a/A1a_056_EN.webp",
-    "assets/cards/A1a/A1a_049_EN.webp"
-  ],
-  "A2": [
-    "assets/cards/A2/A2_155_EN.png",
-    "assets/cards/A2/A2_147_EN_SM.webp",
-    "assets/cards/A2/A2_053_EN_SM.webp",
-    "assets/cards/A2/A2_150_EN.png",
-    "assets/cards/A2/A2_148_EN.webp",
-    "assets/cards/A2/A2_146_EN_SM.webp",
-    "assets/cards/A2/A2_050_EN.webp",
-    "assets/cards/A2/A2_110_EN.png",
-    "assets/cards/A2/A2_119_EN.webp"
-  ],
-  "A2a": [
-    "assets/cards/A2a/A2a_071_EN.webp",
-    "assets/cards/A2a/A2a_073_EN.png",
-    "assets/cards/A2a/A2a_072_EN_SM.webp",
-    "assets/cards/A2a/A2a_050_EN.webp"
-  ],
-  "A2b": [
-    "assets/cards/A2b/A2b_111_EN.png",
-    "assets/cards/A2b/A2b_035_EN_SM.webp",
-    "assets/cards/A2b/A2b_070_EN_SM.webp",
-    "assets/cards/A2b/A2b_071_EN.png",
-    "assets/cards/A2b/A2b_088_EN.webp",
-    "assets/cards/A2b/A2b_069_EN.webp"
-  ],
-  "A3": [
-    "assets/cards/A3/A3_066_EN.png",
-    "assets/cards/A3/A3_144_EN_SM.webp",
-    "assets/cards/A3/A3_151_EN_SM.webp",
-    "assets/cards/A3/A3_122_EN_SM.webp",
-    "assets/cards/A3/A3_085_EN_SM.webp",
-    "assets/cards/A3/A3_086_EN_SM.webp",
-    "assets/cards/A3/A3_123_EN.png",
-    "assets/cards/A3/A3_216_EN.webp",
-    "assets/cards/A3/A3_215_EN.webp",
-    "assets/cards/A3/A3_155_EN.webp",
-    "assets/cards/A3/A3_149_EN.webp"
-  ],
-  "A3a": [
-    "assets/cards/A3a/A3a_060_EN.png",
-    "assets/cards/A3a/A3a_067_EN.png",
-    "assets/cards/A3a/A3a_064_EN_SM.webp",
-    "assets/cards/A3a/A3a_061_EN.png",
-    "assets/cards/A3a/A3a_061_EN.png",
-    "assets/cards/A3a/A3a_043_EN.png",
-    "assets/cards/A3a/A3a_062_EN.png",
-    "assets/cards/A3a/A3a_069_EN.png",
-    "assets/cards/A3a/A3a_042_EN.webp"
-  ],
-  "A3b": [
-    "assets/cards/A3b/A3b_092_EN.png",
-    "assets/cards/A3b/A3b_034_EN.png",
-    "assets/cards/A3b/A3b_028_EN.png",
-    "assets/cards/A3b/A3b_075_EN.png",
-    "assets/cards/A3b/A3b_076_EN_SM.webp",
-    "assets/cards/A3b/A3b_066_EN.webp",
-    "assets/cards/A3b/A3b_078_EN.png",
-    "assets/cards/A3b/A3b_033_EN.png",
-    "assets/cards/A3b/A3b_051_EN_SM.webp",
-    "assets/cards/A3b/A3b_053_EN.png",
-    "assets/cards/A3b/A3b_050_EN.webp"
-  ],
-  "A4": [
-    "assets/cards/A4/A4_158_EN_SM.webp",
-    "assets/cards/A4/A4_190_EN.png",
-    "assets/cards/A4/A4_134_EN.png",
-    "assets/cards/A4/A4_151_EN.webp",
-    "assets/cards/A4/A4_032_EN.webp",
-    "assets/cards/A4/A4_066_EN_SM.webp",
-    "assets/cards/A4/A4_205_EN.png",
-    "assets/cards/A4/A4_156_EN.png",
-    "assets/cards/A4/A4_059_EN.webp",
-    "assets/cards/A4/A4_157_EN.png",
-    "assets/cards/A4/A4_108_EN.webp",
-    "assets/cards/A4/A4_107_EN.webp",
-    "assets/cards/A4/A4_109_EN.webp",
-    "assets/cards/A4/A4_124_EN.webp",
-    "assets/cards/A4/A4_153_EN.webp",
-    "assets/cards/A4/A4_160_EN.webp",
-    "assets/cards/A4/A4_027_EN.webp",
-    "assets/cards/A4/A4_028_EN.webp",
-    "assets/cards/A4/A4_029_EN.webp"
-  ],
-  "A4a": [
-    "assets/cards/A4a/A4a_070_EN.webp",
-    "assets/cards/A4a/A4a_055_EN.webp",
-    "assets/cards/A4a/A4a_020_EN_SM.webp",
-    "assets/cards/A4a/A4a_064_EN.webp",
-    "assets/cards/A4a/A4a_025_EN_SM.webp",
-    "assets/cards/A4a/A4a_010_EN_SM.webp",
-    "assets/cards/A4a/A4a_023_EN.webp",
-    "assets/cards/A4a/A4a_068_EN.webp"
-  ]
-};
-
-/* ===========================
-   Default decks (kept small here; stable2 kept demo decks)
-   We are not auto-seeding your old decks; you'll rebuild or paste them.
-   =========================== */
-const defaultDecks = [
-  { name: "Demo Deck 1", cards: Array(20).fill(null) },
-  { name: "Demo Deck 2", cards: Array(20).fill(null) }
-];
+//empty object that gets loaded from assets folder
+const cardAssets = {};
 
 /* ===========================
    State and DOM refs
@@ -182,6 +45,26 @@ const foldersBar = document.getElementById("foldersBar");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const currentFolderName = document.getElementById("currentFolderName");
 
+//loads cards into cardsAssets object from assets folder
+async function loadCardAssets() {
+  try {
+    const res = await fetch(`${BASE_URL}/cards`);
+    if (!res.ok) throw new Error("Failed to load card assets");
+    const data = await res.json();
+
+    // Transform into same structure as your old cardAssets object
+    data.forEach(set => {
+      cardAssets[set.set] = set.cards; // set.cards already includes the full path
+    });
+
+    console.log("Card assets loaded:", cardAssets);
+  } catch (err) {
+    console.error("Error loading card assets:", err);
+    alert("Failed to load card assets");
+  }
+}
+
+
 /* ===========================
    Utility: populate deck dropdown
    =========================== */
@@ -206,8 +89,6 @@ async function updateDeckDropdown() {
     alert("Unable to communicate with server on page load");
   }
 }
-
-
 
 /* ===========================
    Battle page: load deck into grid
@@ -368,54 +249,73 @@ function updateSlotVisual(slot){
    =========================== */
 let currentFolderKey = null;
 
-function openModalForSlot(idx){
+function openModalForSlot(idx) {
   selectedSlotIndex = idx;
   cardModal.classList.remove("hidden");
-  cardModal.setAttribute("aria-hidden","false");
+  cardModal.setAttribute("aria-hidden", "false");
+
   renderFolderBar();
-  // open first folder by default
-  const first = Object.keys(cardAssets)[0];
-  if(first) showFolder(first);
+
+  // Open first folder by default
+  const firstFolder = Object.keys(cardAssets)[0];
+  if (firstFolder) showFolder(firstFolder);
 }
 
-function renderFolderBar(){
+
+function renderFolderBar() {
   foldersBar.innerHTML = "";
-  Object.keys(cardAssets).forEach(folder => {
+
+  Object.keys(cardAssets).forEach(folderKey => {
     const btn = document.createElement("div");
     btn.classList.add("folder");
-    btn.textContent = folder;
-    btn.addEventListener("click", () => showFolder(folder));
+    btn.textContent = folderKey;
+    btn.addEventListener("click", () => showFolder(folderKey));
     foldersBar.appendChild(btn);
   });
 }
 
-function showFolder(folderKey){
+
+function showFolder(folderKey) {
   currentFolderKey = folderKey;
   currentFolderName.textContent = folderKey;
-  // highlight active
-  Array.from(foldersBar.children).forEach(c => c.classList.toggle("active", c.textContent === folderKey));
-  // render thumbnails
+
+  // Highlight active folder
+  Array.from(foldersBar.children).forEach(btn =>
+    btn.classList.toggle("active", btn.textContent === folderKey)
+  );
+
+  // Render the thumbnails
   modalThumbGrid.innerHTML = "";
   const imgs = cardAssets[folderKey] || [];
+
   imgs.forEach(src => {
     const thumb = document.createElement("div");
     thumb.classList.add("thumb");
+
     const img = document.createElement("img");
     img.src = src;
     img.alt = "";
+
     thumb.appendChild(img);
+
     thumb.addEventListener("click", () => {
       const slot = builderGrid.children[selectedSlotIndex];
-      if(!slot) return;
+      if (!slot) return;
+
       slot.dataset.card = src;
       updateSlotVisual(slot);
-      slot.setAttribute("draggable","true");
+      slot.setAttribute("draggable", "true");
+
+      // Close modal
       cardModal.classList.add("hidden");
-      cardModal.setAttribute("aria-hidden","true");
+      cardModal.setAttribute("aria-hidden", "true");
+      selectedSlotIndex = null;
     });
+
     modalThumbGrid.appendChild(thumb);
   });
 }
+
 
 closeModalBtn.addEventListener("click", () => {
   cardModal.classList.add("hidden");
@@ -578,15 +478,13 @@ deckSelect.addEventListener("change", async (e) => {
   }
 });
 
-
-
-
 /* ===========================
    Init on first load
    =========================== */
 // Load decks from backend and initialize first deck
 async function initApp() {
   try {
+    await loadCardAssets(); // load dynamic card assets
     await updateDeckDropdown();
 
     if (decks.length > 0) {

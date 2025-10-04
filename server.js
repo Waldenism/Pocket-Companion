@@ -107,6 +107,28 @@ app.delete("/decks/:id", (req, res) => {
   res.json({ message: "Deck deleted" });
 });
 
+app.get("/cards", (req, res) => {
+  const CARDS_DIR = path.join(__dirname, "assets", "cards");
+
+  try {
+    const sets = fs.readdirSync(CARDS_DIR, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => {
+        const folderName = dirent.name;
+        const folderPath = path.join(CARDS_DIR, folderName);
+        const files = fs.readdirSync(folderPath)
+          .filter(file => file.endsWith(".png") || file.endsWith(".webp"))
+          .map(file => `assets/cards/${folderName}/${file}`); // path relative to front-end
+        return { set: folderName, cards: files };
+      });
+
+    res.json(sets);
+  } catch (err) {
+    console.error("Error reading card assets:", err);
+    res.status(500).json({ message: "Failed to read card assets" });
+  }
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
