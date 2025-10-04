@@ -22,7 +22,8 @@
   "homepage": "https://github.com/Waldenism/Pocket-Companion#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
