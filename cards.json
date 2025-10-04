@@ -1,0 +1,89 @@
+[
+	{
+		"id": "A1_001",
+		"name": "Bulbasaur",
+		"category": "Monster",
+		"sub-category": "Basic",
+		"type": "Grass",
+		"hp": 70,
+		"ability": null,
+		"attacks": [{
+			"name": "vinewhip",
+			"damage": 40,
+			"cost": ["Grass", "Colorless"],
+			"effect": null
+		}],
+		"weakness": [{"type": "fire", "modifier": +20}],
+		"retreatCost": ["Colorless"],
+		"Series": "A",
+		"set": "A1",
+		"rarity": "one-diamond",
+		"image": "URL"
+	},
+	{
+		"id": "A1_089",
+		"name": "Greninja",
+		"category": "Monster",
+		"sub-category": "Stage 2",
+		"type": "Water",
+		"hp": 120,
+		"ability": {
+			"name": "Water Shuriken",
+			"description": "Once during your turn, you may do 20 damage to 1 of your opponent's Pokemon"
+		},
+		"attacks": [{
+			"name": "Mist Slash",
+			"damage": 60,
+			"cost": ["Water", "Colorless"],
+			"effect": null
+		}],
+		"weakness": [{"type": "Lighting", "modifier": +20}],
+		"retreatCost": ["Colorless"],
+		"Series": "A",
+		"set": "A1",
+		"rarity": "three-diamond",
+		"image": "URL"
+	},
+	{
+		"id": "A3b_024",
+		"name": "Primarina ex",
+		"category": "Monster",
+		"sub-category": "Stage 2",
+		"type": "Water",
+		"hp": 180,
+		"ability": null,
+		"attacks": [{
+			"name": "Hydro Pump",
+			"damage": 40,
+			"cost": ["Water"],
+			"effect": "If this Pokemon has at least 1 extra 'Water' Energy attached, this attack does 40 more damage."
+		},{
+			"name": "Sparkling Aria",
+			"damage": 100,
+			"cost": ["Water", "Water", "Water"],
+			"effect": "Heal 20 damage from this Pokemon"
+		}],
+		"weakness": [{"type": "Lighting", "modifier": +20}],
+		"retreatCost": ["Colorless", "Colorless"],
+		"Series": "A",
+		"set": "A3b",
+		"rarity": "four-diamond",
+		"image": "URL"
+	},
+	{
+		"id": "A3a_067",
+		"name": "Gladion",
+		"category": "Trainer",
+		"sub-category": "Supporter",
+		"type": null,
+		"hp": null,
+		"ability": "Put 1 random 'Type:Null' or 'Silvally' from your deck into your hand.",
+		"attacks": null,
+		"weakness": null,
+		"retreatCost": null,
+		"Series": "A3a",
+		"set": "A1",
+		"rarity": "two-diamond",
+		"image": "URL"
+	}
+]

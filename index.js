@@ -27,7 +27,8 @@ const cardAssets = {
     "assets/cards/Promo-A/P-A_007_EN.png",
     "assets/cards/Promo-A/P-A_005_EN.png",
     "assets/cards/Promo-A/P-A_006_EN.webp",
-    "assets/cards/Promo-A/P-A_001_EN.png"
+    "assets/cards/Promo-A/P-A_001_EN.png",
+    "assets/cards/Promo-A/P-A_002_EN.webp"
   ],
   "A1": [
     "assets/cards/A1/A1_098_EN_SM.webp",
@@ -38,11 +39,19 @@ const cardAssets = {
     "assets/cards/A1/A1_087_EN_SM.webp",
     "assets/cards/A1/A1_205_EN.png",
     "assets/cards/A1/A1_232_EN.webp",
-    "assets/cards/A1/A1_056_EN.webp"
+    "assets/cards/A1/A1_056_EN.webp",
+    "assets/cards/A1/A1_184_EN.png",
+    "assets/cards/A1/A1_185_EN.png",
+    "assets/cards/A1/A1_176_EN.webp",
+    "assets/cards/A1/A1_222_EN.webp",
+    "assets/cards/A1/A1_243_EN.webp",
+    "assets/cards/A1/A1_182_EN.webp",
+    "assets/cards/A1/A1_181_EN.webp"
   ],
   "A1a": [
     "assets/cards/A1a/A1a_068_EN_SM.webp",
-    "assets/cards/A1a/A1a_056_EN.webp"
+    "assets/cards/A1a/A1a_056_EN.webp",
+    "assets/cards/A1a/A1a_049_EN.webp"
   ],
   "A2": [
     "assets/cards/A2/A2_155_EN.png",
@@ -52,11 +61,14 @@ const cardAssets = {
     "assets/cards/A2/A2_148_EN.webp",
     "assets/cards/A2/A2_146_EN_SM.webp",
     "assets/cards/A2/A2_050_EN.webp",
+    "assets/cards/A2/A2_110_EN.png",
+    "assets/cards/A2/A2_119_EN.webp"
   ],
   "A2a": [
     "assets/cards/A2a/A2a_071_EN.webp",
     "assets/cards/A2a/A2a_073_EN.png",
-    "assets/cards/A2a/A2a_072_EN_SM.webp"
+    "assets/cards/A2a/A2a_072_EN_SM.webp",
+    "assets/cards/A2a/A2a_050_EN.webp"
   ],
   "A2b": [
     "assets/cards/A2b/A2b_111_EN.png",
@@ -75,7 +87,9 @@ const cardAssets = {
     "assets/cards/A3/A3_086_EN_SM.webp",
     "assets/cards/A3/A3_123_EN.png",
     "assets/cards/A3/A3_216_EN.webp",
-    "assets/cards/A3/A3_215_EN.webp"
+    "assets/cards/A3/A3_215_EN.webp",
+    "assets/cards/A3/A3_155_EN.webp",
+    "assets/cards/A3/A3_149_EN.webp"
   ],
   "A3a": [
     "assets/cards/A3a/A3a_060_EN.png",
@@ -85,7 +99,8 @@ const cardAssets = {
     "assets/cards/A3a/A3a_061_EN.png",
     "assets/cards/A3a/A3a_043_EN.png",
     "assets/cards/A3a/A3a_062_EN.png",
-    "assets/cards/A3a/A3a_069_EN.png"
+    "assets/cards/A3a/A3a_069_EN.png",
+    "assets/cards/A3a/A3a_042_EN.webp"
   ],
   "A3b": [
     "assets/cards/A3b/A3b_092_EN.png",
@@ -95,7 +110,10 @@ const cardAssets = {
     "assets/cards/A3b/A3b_076_EN_SM.webp",
     "assets/cards/A3b/A3b_066_EN.webp",
     "assets/cards/A3b/A3b_078_EN.png",
-    "assets/cards/A3b/A3b_033_EN.png"
+    "assets/cards/A3b/A3b_033_EN.png",
+    "assets/cards/A3b/A3b_051_EN_SM.webp",
+    "assets/cards/A3b/A3b_053_EN.png",
+    "assets/cards/A3b/A3b_050_EN.webp"
   ],
   "A4": [
     "assets/cards/A4/A4_158_EN_SM.webp",
@@ -106,7 +124,17 @@ const cardAssets = {
     "assets/cards/A4/A4_066_EN_SM.webp",
     "assets/cards/A4/A4_205_EN.png",
     "assets/cards/A4/A4_156_EN.png",
-    "assets/cards/A4/A4_059_EN.webp"
+    "assets/cards/A4/A4_059_EN.webp",
+    "assets/cards/A4/A4_157_EN.png",
+    "assets/cards/A4/A4_108_EN.webp",
+    "assets/cards/A4/A4_107_EN.webp",
+    "assets/cards/A4/A4_109_EN.webp",
+    "assets/cards/A4/A4_124_EN.webp",
+    "assets/cards/A4/A4_153_EN.webp",
+    "assets/cards/A4/A4_160_EN.webp",
+    "assets/cards/A4/A4_027_EN.webp",
+    "assets/cards/A4/A4_028_EN.webp",
+    "assets/cards/A4/A4_029_EN.webp"
   ],
   "A4a": [
     "assets/cards/A4a/A4a_070_EN.webp",
@@ -115,7 +143,8 @@ const cardAssets = {
     "assets/cards/A4a/A4a_064_EN.webp",
     "assets/cards/A4a/A4a_025_EN_SM.webp",
     "assets/cards/A4a/A4a_010_EN_SM.webp",
-    "assets/cards/A4a/A4a_023_EN.webp"
+    "assets/cards/A4a/A4a_023_EN.webp",
+    "assets/cards/A4a/A4a_068_EN.webp"
   ]
 };
 
@@ -491,10 +520,12 @@ toBuilderBtn.addEventListener("click", () => {
   document.getElementById("builderPage").classList.remove("hidden");
   editingIndex = null;
   initBuilderGrid();
+  resetBtn.classList.add("hidden");
 });
 toBattleBtn.addEventListener("click", async () => {
   document.getElementById("builderPage").classList.add("hidden");
   document.getElementById("battlePage").classList.remove("hidden");
+  resetBtn.classList.remove("hidden");
 
   try {
     await updateDeckDropdown(); // fetch deck summaries from server
@@ -514,10 +545,40 @@ toBattleBtn.addEventListener("click", async () => {
 
 
 /* When dropdown changes */
-deckSelect.addEventListener("change", (e) => {
+deckSelect.addEventListener("change", async (e) => {
   const deckId = e.target.value;
-  if(deckId) loadDeck(deckId);
+  if (!deckId) return;
+
+  // Load into battle view
+  await loadDeck(deckId);
+
+  // If builder page is visible, also populate builder grid
+  const builderPage = document.getElementById("builderPage");
+  if (!builderPage.classList.contains("hidden")) {
+    try {
+      const deck = await apiFetch(`/decks/${deckId}`); // fetch full deck
+      if (!deck) return;
+
+      editingIndex = decks.findIndex(d => d.id === deckId);
+      deckNameInput.value = deck.name;
+
+      initBuilderGrid();
+      deck.cards.forEach((src, i) => {
+        if (src) {
+          const slot = builderGrid.children[i];
+          slot.dataset.card = src;
+          updateSlotVisual(slot);
+          slot.setAttribute("draggable", "true");
+        }
+      });
+    } catch (err) {
+      console.error("Failed to load deck for builder:", err);
+      alert("Could not load deck. Please try again.");
+    }
+  }
 });
+
+
 
 
 /* ===========================
